@@ -1,0 +1,24 @@
+<h3>{{viewTitle}}</h3>
+<form action="/employee" method="POST" autocomplete="off">
+<input type="hidden" name="id" value="{{employee.id}}">
+    <div>
+        <label>Full Name:</label>
+        <input type="text" name="fullName" placeholder="Full Name" value="{{employee.fullName}}">
+    </div>
+    <div>
+        <label>Email:</label>
+        <input type="text" name= "email", placeholder="Email" value="{{employee.email}}">
+    </div>
+    <div>
+        <label>Mobile:</label>
+        <input type="text" name="mobile" placeholder="Mobile" value="{{employee.mobile}}">
+    </div>
+    <div>
+        <label>City:</label>
+        <input type="text" name="city" placeholder="City" value="{{employee.city}}">
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+        <a href="/employee/list"><i></i>View All</a>
+    </div>
+</form>
